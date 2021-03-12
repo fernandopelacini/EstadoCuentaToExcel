@@ -1,0 +1,12 @@
+C:\Users\Fernando\documents\visual studio 2010\Projects\Estado Cuenta a Excel\Estado Cuenta a Excel\bin\Debug\Estado Cuenta a Excel.exe
+C:\Users\Fernando\documents\visual studio 2010\Projects\Estado Cuenta a Excel\Estado Cuenta a Excel\bin\Debug\Estado Cuenta a Excel.pdb
+C:\Users\Fernando\documents\visual studio 2010\Projects\Estado Cuenta a Excel\Estado Cuenta a Excel\bin\Debug\Estado Cuenta a Excel.xml
+C:\Users\Fernando\documents\visual studio 2010\Projects\Estado Cuenta a Excel\Estado Cuenta a Excel\obj\x86\Debug\Estado_Cuenta_a_Excel.frmBuscarCliente.resources
+C:\Users\Fernando\documents\visual studio 2010\Projects\Estado Cuenta a Excel\Estado Cuenta a Excel\obj\x86\Debug\Estado_Cuenta_a_Excel.frmEstadoCuentaListar.resources
+C:\Users\Fernando\documents\visual studio 2010\Projects\Estado Cuenta a Excel\Estado Cuenta a Excel\obj\x86\Debug\Estado_Cuenta_a_Excel.Resources.resources
+C:\Users\Fernando\documents\visual studio 2010\Projects\Estado Cuenta a Excel\Estado Cuenta a Excel\obj\x86\Debug\Estado_Cuenta_a_Excel._usrEstadoCuenta.resources
+C:\Users\Fernando\documents\visual studio 2010\Projects\Estado Cuenta a Excel\Estado Cuenta a Excel\obj\x86\Debug\Estado Cuenta a Excel.vbproj.GenerateResource.Cache
+C:\Users\Fernando\documents\visual studio 2010\Projects\Estado Cuenta a Excel\Estado Cuenta a Excel\obj\x86\Debug\Estado Cuenta a Excel.exe
+C:\Users\Fernando\documents\visual studio 2010\Projects\Estado Cuenta a Excel\Estado Cuenta a Excel\obj\x86\Debug\Estado Cuenta a Excel.xml
+C:\Users\Fernando\documents\visual studio 2010\Projects\Estado Cuenta a Excel\Estado Cuenta a Excel\obj\x86\Debug\Estado Cuenta a Excel.pdb
+C:\Users\Fernando\documents\visual studio 2010\Projects\Estado Cuenta a Excel\Estado Cuenta a Excel\obj\x86\Debug\Estado Cuenta a Excel.vbprojResolveAssemblyReference.cache

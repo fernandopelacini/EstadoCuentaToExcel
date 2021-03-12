@@ -1,0 +1,633 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+EstadoCuentaaExcel
+</name>
+</assembly>
+<members>
+<member name="M:Estado_Cuenta_a_Excel.CAEA.Dispose">
+	<summary>
+ Destruye el objeto
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Estado_Cuenta_a_Excel.PuestoDeVenta.Dispose">
+	<summary>
+ Destruye el objeto
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Estado_Cuenta_a_Excel.PuestoDeVenta.ListarPuestosDeVenta(System.String,System.Data.DataSet@)">
+	<summary>
+ Lista los puestos de venta
+ </summary>
+	<param name="strEmpresa">Cuenta de la que se quiere traer los puestos de venta</param>
+	<param name="oDatos">Dataset con los datos cargados</param>
+	<remarks></remarks>
+</member><member name="M:Estado_Cuenta_a_Excel.PuestoDeVenta.TraerIDpuestoVenta(System.String)">
+	<summary>
+ Trae el ID de un puesto de venta
+ </summary>
+	<param name="strPuestoVenta ">Puesto de venta</param>
+	<returns>ID del puesto de venta</returns>
+	<remarks></remarks>
+</member><member name="M:Estado_Cuenta_a_Excel.CondicionIVA.Dispose">
+	<summary>
+ Destruye el objeto
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Estado_Cuenta_a_Excel.CondicionIVA.ListarCondicionesDeIVA(System.Data.DataSet@)">
+	<summary>
+ Lista las condiciones de IVA
+ </summary>
+	<param name="oDatos">Dataset con los datos cargados</param>
+	<remarks></remarks>
+</member><member name="M:Estado_Cuenta_a_Excel.Excel.Dispose">
+	<summary>
+ Destruye el objeto
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Estado_Cuenta_a_Excel.Excel.#ctor">
+	<summary>
+ Instacia el objeto excel
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Estado_Cuenta_a_Excel.Excel.Exportar(System.Data.DataTable,System.String)">
+	<summary>
+ Exporta los datos a excel
+ </summary>
+	<param name="dtDatos">Datatable con los datos a exportar</param>
+	<param name="strExcelFileName">Nombre con el que se va a guardar el archivo</param>
+	<remarks></remarks>
+</member><member name="M:Estado_Cuenta_a_Excel.ErrorLog.ListarLogErroresPorFecha(System.DateTime,System.DateTime,Estado_Cuenta_a_Excel.dsDatos@)">
+	<summary>
+ Lista los logs de errores en un rango de fechas
+ </summary>
+	<param name="dteFechaDesde">Fecha inicio del error</param>
+	<param name="dteFechaHasta">Fecha limite del error</param>
+	<param name="oDatos">Dataset con los logs</param>
+	<remarks></remarks>
+</member><member name="M:Estado_Cuenta_a_Excel.TipoComprobante.Dispose">
+	<summary>
+ Destruye el objeto
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Estado_Cuenta_a_Excel.TipoComprobante.ListarTiposDeComprobante(System.Data.DataSet@)">
+	<summary>
+ Lista los tipos de comprobante
+ </summary>
+	<param name="oDatos">Dataset con los datos cargados</param>
+	<remarks></remarks>
+</member><member name="M:Estado_Cuenta_a_Excel.TipoComprobante.TraerIDtipoComprobante(System.String)">
+	<summary>
+ Trae el ID de un tipo de comprobante
+ </summary>
+	<param name="strComprobante">Tipo de comprobante</param>
+	<returns>ID del tipo de comprobante</returns>
+	<remarks></remarks>
+</member><member name="M:Estado_Cuenta_a_Excel.TipoComprobante.ListarTiposDeComprobanteNotasDeCredito(System.Data.DataSet@)">
+	<summary>
+ Lista los tipos de comprobante para notas de credito
+ </summary>
+	<param name="oDatos">Dataset con los datos cargados</param>
+	<remarks></remarks>
+</member><member name="M:Estado_Cuenta_a_Excel.clsSQLDataManagement.#ctor(Estado_Cuenta_a_Excel.clsSQLDataManagement.Providers,System.String,System.String,System.String,System.String)">
+	<summary>
+ Initializes the class, indicating the provider use to connect to database
+ </summary>
+	<param name="intProvider"></param>
+	<remarks></remarks>
+</member><member name="M:Estado_Cuenta_a_Excel.clsSQLDataManagement.InitializeCommand">
+	<summary>
+ Initializes the command
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Estado_Cuenta_a_Excel.clsSQLDataManagement.CloseConnection(Estado_Cuenta_a_Excel.clsSQLDataManagement.Providers)">
+	<summary>
+ Close the connection to the database
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Estado_Cuenta_a_Excel.clsSQLDataManagement.OpenConnection">
+	<summary>
+ Opens the connection to the database
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Estado_Cuenta_a_Excel.clsSQLDataManagement.PrepareCommand(System.String)">
+	<summary>
+ Adds the query to the Command.CommandText property
+ </summary>
+	<param name="strQuery">Query to be executed</param>
+	<remarks></remarks>
+</member><member name="M:Estado_Cuenta_a_Excel.clsSQLDataManagement.ExecuteQuery(System.String)">
+	<summary>
+Executes a query and returns the results in a datareader
+ Used for SELECT queries
+ </summary>
+	<param name="strQuery">Query to be executed</param>
+	<returns>The query resutls.</returns>
+</member><member name="M:Estado_Cuenta_a_Excel.clsSQLDataManagement.ExecuteScalar(System.String)">
+	<summary>
+ Executes an scalar
+ </summary>
+	<param name="strQuery">Query to be executed</param>
+	<returns>Scalar result</returns>
+</member><member name="M:Estado_Cuenta_a_Excel.clsSQLDataManagement.ExecuteNonQuery(System.String)">
+	<summary>
+ Executes a non query command.
+ Used for DELETE, INSERT or UPDATE operations
+ </summary>
+</member><member name="M:Estado_Cuenta_a_Excel.clsSQLDataManagement.TestConnection">
+	<summary>
+ Test connection to SQL Server
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Estado_Cuenta_a_Excel.clsSQLDataManagement.BeginTransaction">
+	<summary>
+ Begins a transaction
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Estado_Cuenta_a_Excel.clsSQLDataManagement.CommitTransaction">
+	<summary>
+ Commits a transaction
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Estado_Cuenta_a_Excel.clsSQLDataManagement.RollbackTransaction">
+	<summary>
+ Rollbacks a transaction
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Estado_Cuenta_a_Excel.clsSQLDataManagement.Dispose">
+	<summary>
+ Destroy the object
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Estado_Cuenta_a_Excel.clsSQLDataManagement.PrepareDataset(System.String)">
+	<summary>
+ Prepares the basic commands for the dataset
+ </summary>
+	<param name="strQuery"></param>
+	<remarks></remarks>
+</member><member name="M:Estado_Cuenta_a_Excel.clsSQLDataManagement.PrepareCommandForSP(System.String,System.Data.OleDb.OleDbParameterCollection)">
+	<summary>
+ Sets the command to execute stored procedures
+ </summary>
+	<param name="strQuery">Query to be executed</param>
+	<remarks></remarks>
+</member><member name="M:Estado_Cuenta_a_Excel.clsSQLDataManagement.PrepareCommandForSP(System.String,System.String,System.String)">
+	<summary>
+ Sets the command to execute stored procedures
+ </summary>
+	<param name="strQuery">Nombre del store procedure a ejecutar</param>
+	<param name="strParametroNombre">nombre del parametro o variable del SP</param>
+	<param name="strParametroValor">Valor que se asigna al parametro del SP </param>
+	<remarks></remarks>
+</member><member name="M:Estado_Cuenta_a_Excel.clsSQLDataManagement.PrepareCommandForSP(System.String,System.Int32,System.String)">
+	<summary>
+ Sets the command to execute stored procedures
+ </summary>
+	<param name="strQuery">Query to be executed</param>
+	<param name="strParametroNombre">Paremetro unico</param>
+	<param name="intParametroValor"></param>
+	<remarks></remarks>
+</member><member name="M:Estado_Cuenta_a_Excel.clsSQLDataManagement.ExecuteDataset(System.String,System.String,System.Boolean,System.Data.OleDb.OleDbParameterCollection,Estado_Cuenta_a_Excel.dsDatos)">
+	<summary>
+ Executes a query a returns the results in a dataset.
+ </summary>
+	<param name="strQuery">Query to be executed or SP name</param>
+	<param name="strTableName">Table name, this will be used to fill the dataset
+ through the adapter and using the table name</param>
+	<param name="blnStoredProcedure">Indica si se va a ejecutar un stored procedure o una query normal</param>
+	<param name="oParametros">Colleccion de parametros del SP</param>
+	<returns>Dataset</returns>
+	<remarks></remarks>
+</member><member name="M:Estado_Cuenta_a_Excel.clsSQLDataManagement.ExecuteDataset(System.String,System.String,System.String,System.String,System.Boolean,Estado_Cuenta_a_Excel.dsDatos)">
+	<summary>
+ Executes a query a returns the results in a dataset.
+ </summary>
+	<param name="strQuery">Query to be executed or SP name</param>
+	<param name="strTableName">Table name, this will be used to fill the dataset
+ through the adapter and using the table name</param>
+	<param name="strParametro">Nombre del parametro en el SP</param>
+	<param name="strValor">VAlor a asignar a la variable</param>
+	<param name="blnStoredProcedure">Indica si se va a ejecutar un stored procedure o una query normal</param>
+  Colleccion de parametros del SP
+ <returns>Dataset</returns>
+	<remarks></remarks>
+</member><member name="M:Estado_Cuenta_a_Excel.clsSQLDataManagement.ExecuteSPNonQuery(System.String,System.String,System.String)">
+	<summary>
+ Ejecuta un SP con un solo parametro
+ </summary>
+	<param name="strProcedureName">Nombre del procedimiento almacenado a ejecutar</param>
+	<remarks></remarks>
+</member><member name="M:Estado_Cuenta_a_Excel.clsSQLDataManagement.ExecuteSPNonQuery(System.String,System.String,System.Int32)">
+	<summary>
+ Ejecuta un SP con un solo parametro
+ </summary>
+	<param name="strProcedureName">Nombre del SP a ejecutar</param>
+	<param name="strParametroNombre">Nombre del parametro del SP</param>
+	<param name="intValor">Valor a asignar a la variable</param>
+	<remarks></remarks>
+</member><member name="M:Estado_Cuenta_a_Excel.clsSQLDataManagement.ExecuteSPNonQuery(System.String,System.Data.OleDb.OleDbParameterCollection)">
+	<summary>
+ Ejecuta un SP con varios parametros
+ </summary>
+	<param name="strProcedureName">Nombre del procedimiento almacenado a ejecutar</param>
+	<remarks></remarks>
+</member><member name="M:Estado_Cuenta_a_Excel.clsSQLDataManagement.ExecuteReaderStoredProcedure(System.String,System.String,System.String)">
+	<summary>
+Executes a SP and returns the results in a datareader
+ Used for SELECT queries
+ </summary>
+	<param name="strStoredProcedure">Nombre del stored procedure a ejecutar</param>
+	<param name="strParametroNombre">Nombre  del parametro del SP</param>
+	<param name="strValor">Valor que se asigna a la varible del SP</param>
+	<returns>The query resutls.</returns>
+</member><member name="M:Estado_Cuenta_a_Excel.clsSQLDataManagement.ExecuteReaderStoredProcedure(System.String,System.Data.OleDb.OleDbParameterCollection)">
+	<summary>
+Executes a SP and returns the results in a datareader
+ Used for SELECT queries
+ </summary>
+	<param name="strStoredProcedure">Nombre del stored procedure a ejecutar</param>
+	<param name="oParametros">Colecion de parametros del SP</param>
+	<returns>The query resutls.</returns>
+</member><member name="M:Estado_Cuenta_a_Excel.clsSQLDataManagement.ExecuteSPScalar(System.String,System.String,System.String)">
+	<summary>
+ Ejecuta un Scalar de un SP con un parametro
+ </summary>
+	<param name="strProcedureName">Nombre del SP a ejecutar</param>
+	<param name="strParametroNombre">Nombre del parametro del SP</param>
+	<param name="strValor">Valor para ese parametro</param>
+	<remarks></remarks>
+</member><member name="M:Estado_Cuenta_a_Excel.clsSQLDataManagement.ExecuteSPScalar(System.String,System.Data.OleDb.OleDbParameterCollection)">
+	<summary>
+ Ejecuta un Scalar de un SP con mas de un parametro 
+ </summary>
+	<param name="strProcedureName">Nombre del SP a ejecutar</param>
+	<param name="oParametros">Collecion de parametros con sus valores</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Estado_Cuenta_a_Excel.Tarjeta.Dispose">
+	<summary>
+ Destruye el objeto
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Estado_Cuenta_a_Excel.Tarjeta.ListarTarjetas(System.Data.DataSet@)">
+	<summary>
+ Lista las tarjetas
+ </summary>
+	<param name="oDatos">Dataset con los datos cargados</param>
+	<remarks></remarks>
+</member><member name="M:Estado_Cuenta_a_Excel.Tarjeta.TraerIDTarjeta(System.String)">
+	<summary>
+ Trae el ID de una tarjeta
+ </summary>
+	<param name="strTarjeta">Nombre tarjeta</param>
+	<returns>ID </returns>
+	<remarks></remarks>
+</member><member name="M:Estado_Cuenta_a_Excel.ApplicationLog.Create(System.String,System.String)">
+	<summary>
+ Crea una entrada en la tabla de logs
+ </summary>
+	<param name="strEvento">Evento que ocurre</param>
+	<param name="strDescripcion">Descripcion del evento</param>
+	<remarks></remarks>
+</member><member name="M:Estado_Cuenta_a_Excel.ApplicationLog.Dispose">
+	<summary>
+ Destruye el objeto
+ </summary>
+	<remarks></remarks>l
+
+</member><member name="M:Estado_Cuenta_a_Excel.ApplicationLog.ListarLogActividadesPorFecha(System.DateTime,System.DateTime,Estado_Cuenta_a_Excel.dsDatos@)">
+	<summary>
+ Lista los logs de actividades en un rango de fechas
+ </summary>
+	<param name="dteFechaDesde">Fecha inicio del log</param>
+	<param name="dteFechaHasta">Fecha limite del log</param>
+	<param name="oDatos">Dataset con los logs</param>
+	<remarks></remarks>
+</member><member name="M:Estado_Cuenta_a_Excel.Factura.Dispose">
+	<summary>
+ Destruye el objeto
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Estado_Cuenta_a_Excel.Factura.#ctor">
+	<summary>
+ Inicializa el objeto
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Estado_Cuenta_a_Excel.Factura.TraerProximaFactura(System.String,System.String)">
+	<summary>
+ Trae el proximo nro de factura dependiendo si es A o B y de que empresa.
+ </summary>
+	<param name="strTipoComprobante">Indica si es Factura A o B</param>
+	<param name="strNombreEmpresa">Nombre de la cuenta para la cual se quiere generar un comprobante</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Estado_Cuenta_a_Excel.Factura.NuevaFactura">
+	<summary>
+ Inserta una factura en la base
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Estado_Cuenta_a_Excel.Factura.TraerIDFactura(System.String,System.Int16,System.Int16)">
+	<summary>
+ Trae el ID de una factura
+ </summary>
+	<param name="strNroFactura">nroFactura</param>
+	<returns>ID de la factura</returns>
+	<remarks></remarks>
+</member><member name="M:Estado_Cuenta_a_Excel.Factura.TraerDatosFactura(System.SByte,System.String,System.String,Estado_Cuenta_a_Excel.dsDatos@)">
+	<summary>
+ Trae los datos que componen una factura
+ </summary>
+	<param name="intTipoComprobante">Indica si se va a buscar factura A  (1) or factura B (6)</param>
+	<param name="strFactura">Nro de factura de la que se van a traer los datos</param>
+	<param name="strCuenta">Empresa de la que se van a obtener los datos</param>
+	<param name="dsData">Dataset con los datos cargados</param>
+	<remarks></remarks>
+</member><member name="M:Estado_Cuenta_a_Excel.Factura.ListarRemitosPendientesDeFacturar(System.String,System.String,System.Data.DataSet@)">
+	<summary>
+ Lista los remitos pendientes de facturar
+ </summary>
+	<param name="oDatos">Dataset con los datos cargados</param>
+	<remarks></remarks>
+</member><member name="M:Estado_Cuenta_a_Excel.Factura.CancelarRemitoContraFactura">
+	<summary>
+ Actualiza un remito cambiando el estado de pendiente de facturar y el ID de la factura que lo cancela.
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Estado_Cuenta_a_Excel.Factura.TraerProximoRemito(System.Byte,System.String)">
+	<summary>
+ Trae el proximo nro de remito
+ </summary>
+	<param name="intTipoComprobante">ID de comprobante, sale de la tabla tbltiposcomprobantes</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Estado_Cuenta_a_Excel.Factura.CancelarFactura(System.Int32)">
+	<summary>
+ Actualiza el estado a activo=0 de una factura al generar una nota de credito.
+ </summary>
+	<param name="intIDfacturAcancelar">ID de la factura a cancelar</param>
+	<remarks></remarks>
+</member><member name="M:Estado_Cuenta_a_Excel.Factura.TraerProximoRecibo(System.Byte,System.String)">
+	<summary>
+ Trae el proximo nro de recibo
+ </summary>
+	<param name="intTipoComprobante">ID de comprobante, sale de la tabla tbltiposcomprobantes</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Estado_Cuenta_a_Excel.Factura.TraerDatosRecibo(System.SByte,System.String,System.String,Estado_Cuenta_a_Excel.dsDatos@)">
+	<summary>
+ Trae los datos que componen un recibo
+ </summary>
+	<param name="intTipoComprobante">Indica el comprobante que se va a buscar por ahora por default 36</param>
+	<param name="strFactura">Nro de recibo de la que se van a traer los datos</param>
+	<param name="strCuenta">Empresa de la que se van a obtener los datos</param>
+	<param name="dsData">Dataset con los datos cargados</param>
+	<remarks></remarks>
+</member><member name="M:Estado_Cuenta_a_Excel.Factura.TraerDetalleRecibo(System.String,System.String,Estado_Cuenta_a_Excel.dsDatos@)">
+	<summary>
+ Trae los datos que componen un recibo
+ </summary>
+	<param name="strFactura">Nro de recibo de la que se van a traer los datos</param>
+	<param name="strCuenta">Empresa de la que se van a obtener los datos</param>
+	<param name="dsData">Dataset con los datos cargados</param>
+	<remarks></remarks>
+</member><member name="M:Estado_Cuenta_a_Excel.Factura.ListarCobranzas(System.String,System.DateTime,System.DateTime,System.String,System.Boolean,Estado_Cuenta_a_Excel.dsDatos@)">
+	<summary>
+ Lista los cheques
+ </summary>
+	<param name="strNombreEmpresa">Nombre de la cuenta o empresa sobre la que se genera el listado</param>
+	<param name="dteFechaDesde">Fecha de inicio del informe</param>
+	<param name="dteFechaHasta">Fecha tope del informe</param>
+	<param name="strCriterioBusqueda">Contado o Cta Cte</param>
+	<param name="blnAmbasOpciones">Indica si se busca por los 2 criterios</param>
+	<param name="oDatos">Dataset con los datos cargados</param>
+	<remarks></remarks>
+</member><member name="M:Estado_Cuenta_a_Excel.Factura.ListarConsumidorFinal(Estado_Cuenta_a_Excel.dsDatos@)">
+	<summary>
+ Lalalala
+ </summary>
+	<param name="oDatos">Dataset con los datos cargados</param>
+	<remarks></remarks>
+</member><member name="M:Estado_Cuenta_a_Excel.Factura.GenerarEstadoDeCuenta(System.String,System.String,System.String,System.String,Estado_Cuenta_a_Excel.dsDatos@,System.String,System.Boolean)">
+	<summary>
+ Genera el estado de cuenta de un cliente.
+ </summary>
+	<param name="strFechaInicio">Fecha de incio de busqueda de datos</param>
+	<param name="strFechaFin">Fecha de fin de busqueda de datos</param>
+	<param name="strCliente">Razon social del cliente a buscar</param>
+	<param name="strEmpresa">Cuenta o empresa sobre la que se realiza la busqueda</param>
+	<param name="oDatos">Dataset con los datos cargados</param>
+	<remarks></remarks>
+</member><member name="M:Estado_Cuenta_a_Excel.Factura.GenerarIVAventas(System.String,System.String,System.String,Estado_Cuenta_a_Excel.dsDatos@)">
+	<summary>
+ Genera el reporte de IVA Ventras
+ </summary>
+	<param name="strFechaInicio">Fecha de incio de busqueda de datos</param>
+	<param name="strFechaFin">Fecha de fin de busqueda de datos</param>
+	<param name="strEmpresa">Cuenta o empresa sobre la que se realiza la busqueda</param>
+	<param name="oDatos">Dataset con los datos cargados</param>
+	<remarks></remarks>
+</member><member name="M:Estado_Cuenta_a_Excel.Factura.TraerProximaNotaDeCredito(System.String,System.String)">
+	<summary>
+ Trae el proximo nro de nota de credito dependiendo si es A o B y de que empresa.
+ </summary>
+	<param name="strTipoComprobante">Indica si es Nota de Credito A o B</param>
+	<param name="strNombreEmpresa">Nombre de la cuenta para la cual se quiere generar un comprobante</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Estado_Cuenta_a_Excel.FacturaItems.Dispose">
+	<summary>
+ Destruye el objeto
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Estado_Cuenta_a_Excel.FacturaItems.#ctor">
+	<summary>
+ Inicializa el objeto
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Estado_Cuenta_a_Excel.FacturaItems.NuevoItemFactura">
+	<summary>
+ Inserta los items de una factura en la base
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Estado_Cuenta_a_Excel.FacturaItems.TraerDatosFacturaItems(System.Int32,Estado_Cuenta_a_Excel.dsDatos@)">
+	<summary>
+ Trae los items de una factura
+ </summary>
+	<param name="intIDFactura">ID de la factura que se quieren obtener los items</param>
+	<param name="dsData">Dataset con los datos cargados</param>
+	<remarks></remarks>
+</member><member name="P:Estado_Cuenta_a_Excel.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:Estado_Cuenta_a_Excel.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="P:Estado_Cuenta_a_Excel.My.Resources.Resources.Excel">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Estado_Cuenta_a_Excel.My.Resources.Resources.Excel_icon">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Estado_Cuenta_a_Excel.My.Resources.Resources.imprimir1">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Estado_Cuenta_a_Excel.My.Resources.Resources.Search">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="T:Estado_Cuenta_a_Excel.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="T:Estado_Cuenta_a_Excel.dsDatos.dtEstadoCuentaDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Estado_Cuenta_a_Excel.dsDatos.dtEstadoCuentaRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Estado_Cuenta_a_Excel.dsDatos.dtEstadoCuentaRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Estado_Cuenta_a_Excel.dsDatos">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="M:Estado_Cuenta_a_Excel.Cuenta.Dispose">
+	<summary>
+ Destruye el objeto
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Estado_Cuenta_a_Excel.Cuenta.ListarCuentas(System.Data.DataSet@,System.String)">
+	<summary>
+ Trae las cuentas (compañias) en la base de datos
+ </summary>
+	<param name="dsCuentas">Dataset donde se van a cargar las cuentas</param>
+	<remarks></remarks>
+</member><member name="M:Estado_Cuenta_a_Excel.Cuenta.TraerIDcuenta(System.String)">
+	<summary>
+ Trae el ID de una cuenta (compañia)
+ </summary>
+	<param name="strNombreCuenta">Nombre de la cuenta del que se quiere buscar el ID</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Estado_Cuenta_a_Excel.Cliente.NuevoCliente">
+	<summary>
+ Inserta un nuevo cliente en la base de datos
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Estado_Cuenta_a_Excel.Cliente.Dispose">
+	<summary>
+ Destruye el objeto
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Estado_Cuenta_a_Excel.Cliente.ListarClientes(System.Int32,System.String,Estado_Cuenta_a_Excel.dsDatos@)">
+	<summary>
+ Trae los clientes en el sistema
+ </summary>
+	<param name="intCampoBusqueda">campo por el cual se va buscar un cliente</param>
+	<param name="strValorBusqueda">Valor de busqueda</param>
+	<param name="oDatos">Dataset con los datos cargados</param>
+	<remarks></remarks>
+</member><member name="M:Estado_Cuenta_a_Excel.Cliente.TraerIDCliente(System.String)">
+	<summary>
+ Trae el ID de un cliente
+ </summary>
+	<param name="strRazonSocial">Razon social del cliente</param>
+	<returns>ID del cliente</returns>
+	<remarks></remarks>
+</member><member name="M:Estado_Cuenta_a_Excel.Cliente.TraerCUITcliente(System.String)">
+	<summary>
+ Trae un cliente dado una razon social
+ </summary>
+	<param name="strRazonSocial"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Estado_Cuenta_a_Excel.Cliente.TraerDatosPersonales(System.String)">
+	<summary>
+ Trae los datos personales de un cliente
+ Ej: Localidad, domicilio, telefono, etc
+ </summary>
+	<param name="strRazonSocial"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Estado_Cuenta_a_Excel.Cliente.IsClienteExistente(System.String)">
+	<summary>
+ Verifica que el cliente no exista antes de ingresarlo
+ </summary>
+	<param name="strCUIT">Numero de cuit que se quiere ingresar</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Estado_Cuenta_a_Excel.Cliente.ActualizarCliente">
+	<summary>
+ Actualiza un cliente en la base
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Estado_Cuenta_a_Excel.Cliente.EliminarCliente">
+	<summary>
+ Elimina un cliente de la base seteando su estado a 0
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:Estado_Cuenta_a_Excel.ClienteCENT">
+	<summary>
+ Para manejar la tabla CLIENTES que trae los datos de la CENT
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Estado_Cuenta_a_Excel.Funciones.SetError(System.Windows.Forms.Control,System.String,System.Drawing.Color)">
+	<summary>
+ Setea el mensaje de error a un control atraves del objeto ErrorProvider
+ </summary>
+	<param name="oControl">Control al que se le aplica el mensaje de error.
+ Eg: TextBox1, ComboBox1</param>
+	<param name="strMensaje">Mensaje de error a mostrar en el control</param>
+	<remarks></remarks>
+</member><member name="M:Estado_Cuenta_a_Excel.Funciones.GetServerDate">
+	<summary>
+ Obtiene la fecha del servidor de base de datos.
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Estado_Cuenta_a_Excel.Funciones.SoloNumeros(System.Windows.Forms.KeyPressEventArgs,System.Windows.Forms.TextBox,System.Boolean)">
+	<summary>
+ Valida que el caracter ingresado solo sea nro o el separador decimal.
+ </summary>
+	<param name="chrCaracter">Caracter ingresado por el usuario.</param>
+	<param name="txtTextbox">Textbox donde tipeo el usuario</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Estado_Cuenta_a_Excel.Funciones.EncriptarMD5(System.String)">
+	<summary>
+ Encripta los datos para generar la licencia utilizando MD5
+ </summary>
+	<param name="strPass"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Estado_Cuenta_a_Excel.Funciones.ValidarCUIT(System.String)">
+	<summary>
+ Funcion que valida cuit
+ </summary>
+	<param name="strNroCuit">cuit a verificar</param>
+	<returns></returns>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

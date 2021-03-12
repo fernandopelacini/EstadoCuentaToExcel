@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsDatos" targetNamespace="http://tempuri.org/dsDatos.xsd" xmlns:mstns="http://tempuri.org/dsDatos.xsd" xmlns="http://tempuri.org/dsDatos.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsDatos" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dsDatos" msprop:Generator_UserDSName="dsDatos">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="dtEstadoCuenta" msprop:Generator_TableClassName="dtEstadoCuentaDataTable" msprop:Generator_TableVarName="tabledtEstadoCuenta" msprop:Generator_TablePropName="dtEstadoCuenta" msprop:Generator_RowDeletingName="dtEstadoCuentaRowDeleting" msprop:Generator_RowChangingName="dtEstadoCuentaRowChanging" msprop:Generator_RowEvHandlerName="dtEstadoCuentaRowChangeEventHandler" msprop:Generator_RowDeletedName="dtEstadoCuentaRowDeleted" msprop:Generator_UserTableName="dtEstadoCuenta" msprop:Generator_RowChangedName="dtEstadoCuentaRowChanged" msprop:Generator_RowEvArgName="dtEstadoCuentaRowChangeEvent" msprop:Generator_RowClassName="dtEstadoCuentaRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="razonSocial" msprop:Generator_ColumnVarNameInTable="columnrazonSocial" msprop:Generator_ColumnPropNameInRow="razonSocial" msprop:Generator_ColumnPropNameInTable="razonSocialColumn" msprop:Generator_UserColumnName="razonSocial" type="xs:string" minOccurs="0" />
+              <xs:element name="fecha" msprop:Generator_ColumnVarNameInTable="columnfecha" msprop:Generator_ColumnPropNameInRow="fecha" msprop:Generator_ColumnPropNameInTable="fechaColumn" msprop:Generator_UserColumnName="fecha" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="cuenta" msprop:Generator_ColumnVarNameInTable="columncuenta" msprop:Generator_ColumnPropNameInRow="cuenta" msprop:Generator_ColumnPropNameInTable="cuentaColumn" msprop:Generator_UserColumnName="cuenta" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="comprobante" msprop:Generator_ColumnVarNameInTable="columncomprobante" msprop:Generator_ColumnPropNameInRow="comprobante" msprop:Generator_ColumnPropNameInTable="comprobanteColumn" msprop:Generator_UserColumnName="comprobante" type="xs:string" minOccurs="0" />
+              <xs:element name="nroComprobante" msprop:Generator_ColumnVarNameInTable="columnnroComprobante" msprop:Generator_ColumnPropNameInRow="nroComprobante" msprop:Generator_ColumnPropNameInTable="nroComprobanteColumn" msprop:Generator_UserColumnName="nroComprobante" type="xs:string" minOccurs="0" />
+              <xs:element name="total" msprop:nullValue="0" msprop:Generator_ColumnPropNameInRow="total" msprop:Generator_ColumnVarNameInTable="columntotal" msprop:Generator_ColumnPropNameInTable="totalColumn" msprop:Generator_UserColumnName="total" type="xs:decimal" minOccurs="0" />
+              <xs:element name="isConsumidorFinal" msprop:Generator_ColumnVarNameInTable="columnisConsumidorFinal" msprop:Generator_ColumnPropNameInRow="isConsumidorFinal" msprop:Generator_ColumnPropNameInTable="isConsumidorFinalColumn" msprop:Generator_UserColumnName="isConsumidorFinal" type="xs:boolean" default="false" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
